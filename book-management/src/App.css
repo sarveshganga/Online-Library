@@ -1,0 +1,21 @@
+
+/* navbar style */
+.navbar {
+  display: flex;
+  justify-Content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+.logo {
+  font-Size: 1.5rem;
+}
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+.section {
+  padding: 2rem;
+}

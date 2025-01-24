@@ -1,0 +1,370 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+.book-card{
+    width: 250px;
+    height: 350px;
+    background: #fff;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.5);
+    transition:transform 0.2s;
+    overflow: hidden;
+}
+.book-card:hover{
+    transform: scale(1.1);
+}
+.book-title{
+    font-size: 1em;
+    text-align: center;
+}
+.book-details{
+    padding: 15px;
+    
+}
+.book-auther{
+    font-size: 0.9em;
+   
+    color: #555;
+    text-align: center;
+    font-weight: 600;
+}
+.book-discription{
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+}
+.book-rating{
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.book-cover{
+    width: 100%;
+
+
+}
+.book-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    background-color: #f9f9f9;
+    color: #333;
+
+}
+.search-input{
+    width: 500px;
+    
+    padding:9px ;
+    border: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.search-btn {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left:5px ;
+  }
+/* navbar style  */
+
+.navbar {
+    display: flex;
+    justify-Content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+   
+  }
+  .logo {
+    font-Size: 1.5rem;
+  }
+  .navLinks {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    font-size: 18px;
+
+    
+  }
+  a:-webkit-any-link{
+    text-decoration: none;
+    color: #fff;
+  }
+  a:-webkit-any-link:hover{
+
+    color: #4CAF50;
+    
+    
+  }
+
+  .section {
+    padding: 2rem;
+  }
+  
+  
+   /* HomePage.css */
+
+.home-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    width: 100%;
+}
+
+.welcome-message {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome-message h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+}
+
+.welcome-message p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+.book-categories, .popular-books {
+    margin-bottom: 30px;
+    
+    
+}
+
+.book-categories h2, .popular-books h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    display: inline-block;
+    padding-bottom: 5px;
+    width: 100vw;
+    
+    
+}
+
+.book-categories ul, .popular-books ul {
+    list-style: none;
+    padding: 0;
+    margin-left:5rem ;
+}
+
+.book-categories li, .popular-books li {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.book-title {
+    font-weight: bold;
+    color: #4CAF50;
+    
+}
+
+.book-author {
+    color: #555;
+}
+.book-details a{
+  color: #333;
+  padding-top: 2rem;
+  padding-left: 3rem;
+}
+.popular-books a{
+  color: #5313d5;
+}
+.details-link {
+    margin-left: 10px;
+
+    text-decoration: none;
+    color: #333;
+}
+
+
+
+/* Add book style */
+/* General container styling */
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    padding: 20px;
+  }
+  
+  .add-book {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .add-book h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Form elements */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error messages */
+  .error {
+    color: #d9534f;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .add-book {
+      padding: 20px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+
+  /* BookDetails Style */
+  .book-details-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .book-details-page img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  .book-details-page h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .book-details-page h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .book-details-page p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .book-details-page button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .book-details-page button:hover {
+    background-color: #0056b3;
+  }
+  /* 404 Not founs page style */
+  
+  
+   .founs-container {
+      text-Align: center;
+      padding :50px;
+      font-Family: Arial, sans-serif;
+    }
+    .founs-title {
+      font-Size: 2.5rem;
+      color: #333;
+    }
+    .founs-message {
+      font-Size: 1.2rem;
+      color: #555;
+      margin: 20px 0;
+    }
+    .founs-link {
+      font-Size :1rem;
+      color: #007BFF;
+      text-Decoration: none;
+      font-Weight: bold;
+    }
+  
+  
+  
+  
+  
